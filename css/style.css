@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*  note vh and vw switched  */
+  width: 100vh;
+  height: 100vw;
+  /*    */
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100vh);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /*   scroll-snap-type: y mandatory; */
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-100vh);
+}
+
+section {
+  width: 50vw;
+  height: 100vh;
+  /*   scroll-snap-align: start; */
+  overflow-y: hidden;
+  font-family: monospace;
+  font-size: 3rem;
+  /*  backface visibility keeps font from looking weird  */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+section:nth-of-type(odd) {
+  background: #111;
+  color: #fff;
+}
+
+section:nth-of-type(even) {
+  background: rgb(63, 27, 27);
+  color: #fff;
+}
+
+section:nth-of-type(3) {
+  width: 100vw;
+  background: #111;
+  color: #fff;
+}
+
+
+/* Home Page */
+
+.socials{
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.socials li{
+  margin-left: -40px
+}
+
+.about-para{
+  font-size: 14px;
+}
+
+.new-flex{
+  display: -webkit-flex;
+  display: flex;
+  border: 2px solid #000;
+  transition: 2s;
+  flex: 1;
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.new-flex:hover{
+  flex-grow: 4;
+}
