@@ -7,6 +7,15 @@
   display: none;
 }
 
+p {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 main {
   position: fixed;
   top: 0;
@@ -34,6 +43,7 @@ article {
 section {
   width: 50vw;
   height: 100vh;
+  position: relative;
   /*   scroll-snap-align: start; */
   overflow-y: hidden;
   font-family: monospace;
@@ -53,38 +63,137 @@ section:nth-of-type(even) {
   color: #fff;
 }
 
+section:nth-of-type(1) {
+  width: 45vw;
+  background: #000;
+}
+
+section:nth-of-type(2) {
+  width: 55vw;
+  background: #F4EEEC;
+}
+
 section:nth-of-type(3) {
-  width: 100vw;
+  width: 80vw;
   background: #111;
   color: #fff;
+}
+
+section:nth-of-type(4) {
+  width: 20vw;
+}
+
+section:nth-of-type(5) {
+  width: 150vw;
+  background: #F4EEEC;
+  ;
+}
+
+section:nth-of-type(6) {
+  width: 60vw;
 }
 
 
 /* Home Page */
 
-.socials{
+.socials {
   list-style-type: none;
   font-size: 20px;
 }
 
-.socials li{
+.socials li {
   margin-left: -40px
 }
 
-.about-para{
+.about-para {
   font-size: 14px;
 }
 
-.new-flex{
+.new-flex {
   display: -webkit-flex;
   display: flex;
-  border: 2px solid #000;
   transition: 2s;
   flex: 1;
   flex-grow: 1;
   font-size: 14px;
+  align-items: end;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
 }
 
-.new-flex:hover{
+.new-flex>h1 {
+  position: absolute;
+  font-size: 140px;
+  top: 20px;
+  left: 50px;
+  transition: 1s;
+}
+
+.new-flex:nth-of-type(1) {
+  background: #817CF9;
+  height: 55vh
+}
+
+.new-flex:nth-of-type(2) {
+  background: #59E7F2;
+  height: 65vh
+}
+
+.new-flex:nth-of-type(3) {
+  background: #D578FF;
+  height: 75vh
+}
+
+.new-flex:nth-of-type(4) {
+  background: #67EEBB;
+  height: 55vh
+}
+
+
+.new-flex:hover {
   flex-grow: 4;
+  height: 55vh !important;
+}
+
+.new-flex:nth-of-type(1):hover>h1 {
+  left: -50px !important;
+}
+
+.new-flex:nth-of-type(2):hover>h1 {
+  left: -50px !important;
+}
+
+/* How it works? section */
+
+.story-card {
+  position: relative;
+  min-height: 200px;
+  margin-top: 100px;
+}
+
+.story-card-img:nth-of-type(1) {
+  position: absolute;
+  left: -50px;
+  top: -50px;
+}
+
+/* Features Section */
+
+.features-head {
+  transform: rotate(-90deg);
+  font-size: 2em;
+}
+
+/* Footer */
+
+.footer-socials{
+  list-style-type: none;
+}
+
+.footer-socials li {
+  margin-left: -40px;
+  padding: 10px 0;
+  border-top: 2px solid #fff;
+  font-size: 20px;
 }
