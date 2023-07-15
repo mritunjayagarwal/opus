@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Xirod';
+  src: url(../Xirod.ttf);
+}
+
 * {
   margin: 0;
   scroll-behavior: smooth;
+}
+
+h1, p{
+  font-family: Xirod, 'sans-serif';
 }
 
 ::-webkit-scrollbar {
@@ -64,23 +73,24 @@ section:nth-of-type(even) {
 }
 
 section:nth-of-type(1) {
-  width: 45vw;
+  width: 50vw;
   background: #000;
 }
 
 section:nth-of-type(2) {
-  width: 55vw;
+  width: 50vw;
   background: #F4EEEC;
 }
 
 section:nth-of-type(3) {
   width: 80vw;
-  background: #111;
-  color: #fff;
+  background: #FFFFFF;
+  color: #000;
 }
 
 section:nth-of-type(4) {
   width: 20vw;
+  background: #000;
 }
 
 section:nth-of-type(5) {
@@ -98,7 +108,7 @@ section:nth-of-type(6) {
 
 .socials {
   list-style-type: none;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .socials li {
@@ -113,8 +123,8 @@ section:nth-of-type(6) {
   display: -webkit-flex;
   display: flex;
   transition: 2s;
-  flex: 1;
-  flex-grow: 1;
+  flex: 0.3;
+  /* flex-grow: 1; */
   font-size: 14px;
   align-items: end;
   height: 300px;
@@ -126,13 +136,24 @@ section:nth-of-type(6) {
   position: absolute;
   font-size: 140px;
   top: 20px;
-  left: 50px;
+  left: 25px;
+  letter-spacing: 15px;
   transition: 1s;
+  color: #000;
+}
+
+.new-flex:nth-of-type(2):hover>h1{
+  font-size: 40px;
+}
+
+.new-flex > img {
+  width: 300px;
+  transition: 5s;
 }
 
 .new-flex:nth-of-type(1) {
   background: #817CF9;
-  height: 55vh
+  height: 60vh
 }
 
 .new-flex:nth-of-type(2) {
@@ -147,18 +168,26 @@ section:nth-of-type(6) {
 
 .new-flex:nth-of-type(4) {
   background: #67EEBB;
-  height: 55vh
+  height: 65vh
 }
 
+.new-flex > img {
+  transition: 0.3s;
+}
 
 .new-flex:hover {
-  flex-grow: 4;
-  height: 55vh !important;
+  flex-grow: 2;
+  height: 70vh !important;
 }
 
 .new-flex:nth-of-type(1):hover>h1 {
   left: -50px !important;
+  color: #fff;
 }
+
+/* .new-flex:nth-of-type(1):hover>img {
+  width: 60%;
+} */
 
 .new-flex:nth-of-type(2):hover>h1 {
   left: -50px !important;
@@ -169,7 +198,8 @@ section:nth-of-type(6) {
 .story-card {
   position: relative;
   min-height: 200px;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .story-card-img:nth-of-type(1) {
@@ -182,7 +212,7 @@ section:nth-of-type(6) {
 
 .features-head {
   transform: rotate(-90deg);
-  font-size: 2em;
+  font-size: 10vh;
 }
 
 /* Footer */
