@@ -433,14 +433,27 @@ section:nth-of-type(6) {
 
 /* How it works? section */
 
+.story-wrapper{
+  width: 80%; margin: 0 auto;
+}
+
+.story-head{
+  font-size: 3.6vw;
+}
+
 .story-card {
   position: relative;
   min-height: 200px;
   margin-top: 50px;
   margin-left: 50px;
+  width: 70%;
 }
 
-.story-card-img:nth-of-type(1) {
+.story-para{
+  text-align: center;
+}
+
+.story-card-img{
   position: absolute;
   left: -50px;
   top: -50px;
@@ -517,7 +530,17 @@ section:nth-of-type(6) {
     width: 100%!important;
     height: 100%;
     overflow-x: hidden !important;
-    padding: 100px 0 !important;
+    padding: 50px 0 !important;
+  }
+
+  section:nth-of-type(1){
+    padding-top: 100px !important;
+    height: 100vh !important;
+  }
+
+  .main-wrapper{
+    display: flex;
+    align-items: center;
   }
 
   .container {
@@ -530,6 +553,7 @@ section:nth-of-type(6) {
 
   .hero-main{
     display: block;
+    margin-top: 100px !important;
   }
 
   .socials-temp div {
@@ -552,7 +576,7 @@ section:nth-of-type(6) {
   }
 
   .hero-head-2{
-    font-size: 45px !important;
+    font-size: 11vw !important;
     margin-bottom: 0px !important
   }
 
@@ -574,7 +598,7 @@ section:nth-of-type(6) {
   }
 
   .gasp-card:hover > img {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
   .gasp-card:nth-of-type(1) {
@@ -591,6 +615,29 @@ section:nth-of-type(6) {
   
   .gasp-card:nth-of-type(4) {
     background: #67EEBB;
+  }
+
+  .story-wrapper{
+    width: 100%;
+  }
+
+  .story-head{
+    font-size: 10vw !important;
+  }
+
+  .story-para{
+    text-align: left;
+  }
+
+  .story-card{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .story-card-img{
+    width: 100px;
+    left: -20px;
+    top: -20px;
   }
 
   .features-head {
