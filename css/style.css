@@ -119,6 +119,18 @@ section:nth-of-type(6) {
   font-size: 14px;
 }
 
+.scroll-drag{
+  font-size: 12px;
+  font-family: Xirod, 'sans-serif';
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scroll-drag img{
+  max-width: 50px;
+}
+
 .new-flex {
   display: -webkit-flex;
   display: flex;
