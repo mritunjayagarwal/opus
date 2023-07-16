@@ -53,3 +53,13 @@ function splitLetters(word) {
 changeWord();
 setInterval(changeWord, 4000);
 
+$(document).ready(function() {
+  $('.open-menu').on('click', function() {
+     $('.overlay').addClass('open');
+  });
+
+  $('.close-menu').on('click', function() {
+    $('.overlay').removeClass('open');
+  });
+});
+
