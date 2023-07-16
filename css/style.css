@@ -49,6 +49,18 @@ article {
   transform: rotate(90deg) translateY(-100vh);
 }
 
+.border-text{
+  font: 800 4.8vw Arial;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+
+.border-text-bottom{
+  font: 600 2vw Arial;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 0.5px;
+}
+
 /*
 ---- Navbar
 */
