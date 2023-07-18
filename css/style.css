@@ -3,6 +3,13 @@
   src: url(../Xirod.ttf);
 }
 
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('../monumentextended-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   scroll-behavior: smooth;
@@ -25,6 +32,10 @@ p {
 .container {
   max-width: 90%;
   margin: 0 auto;
+}
+
+.new-para{
+  font-family: 'MonumentExtended', 'sans-serif';
 }
 
 main {
@@ -477,7 +488,7 @@ section:nth-of-type(6) {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
   transform: rotate(-90deg);
-  font-size: 10vh;
+  font-size: 6vh;
 }
 
 /* Cards Section */
