@@ -469,7 +469,11 @@ section:nth-of-type(6) {
   min-height: 200px;
   margin-top: 50px;
   margin-left: 50px;
-  width: 70%;
+  width: 80%;
+}
+
+.story-card p {
+  font-family: 'MonumentExtended';
 }
 
 .story-para {
@@ -606,7 +610,7 @@ section:nth-of-type(6) {
   }
 
   .hero-head-2 {
-    font-size: 18vw !important;
+    font-size: 12vw !important;
     margin-bottom: 0px !important
   }
 
