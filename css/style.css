@@ -17,6 +17,12 @@
 
 a{
   color: #fff !important;
+  transition: 0.3s;
+}
+
+a:hover{
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
 }
 
 h1,
